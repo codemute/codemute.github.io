@@ -1,0 +1,87 @@
+# Site settings
+theme: "minimal-mistakes-jekyll"
+locale: "en-US"
+title: "codemute"
+name: &name "codemute"
+description: &description "codemute website."
+url: https://codemute.github.io
+baseurl: ""
+repository: "codemute/codemute.github.io"
+logo: "assets/images/logo.png"
+timezone: "Asia/Kolkata"
+github: [metadata]
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/codemute_dev"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/codemute"
+
+# Reading Files
+include:
+  - _pages
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+# Front matter defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author: false
+
+# Comments - Disqus
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "codemute"
+
+# Outputting
+permalink: /:categories/:title/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+path: /tags/

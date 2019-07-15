@@ -1,0 +1,7 @@
+[build]
+  command = "JEKYLL_ENV=production bundle exec jekyll build"
+  publish = "_site"
+
+[context.deploy-preview]
+  command = "JEKYLL_ENV=production bundle exec jekyll build"
+  publish = "_site"
