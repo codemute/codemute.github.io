@@ -1,0 +1,7 @@
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: Docs
+    url: "https://codemutedocs.readthedocs.io/"
+  - title: "About"
+    url: /about/
