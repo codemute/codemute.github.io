@@ -1,8 +1,8 @@
 ---
 permalink: /about/
 title: "About codemute"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2019-04-03T15:15:09-04:00
+excerpt: "About codemute open-source organization."
+last_modified_at: 2019-07-15
 ---
 
 codemute is an open-source organization aimed to maintain completely free and
