@@ -1,0 +1,44 @@
+{% if author == blank %}
+  {% if page.author and site.data.authors[page.author] %}
+    {% assign author = site.data.authors[page.author] %}
+  {% else %}
+    {% assign author = site.author %}
+  {% endif %}
+{% endif %}
+
+
+<div itemscope itemtype="https://schema.org/Person" style="display: inline-block;">
+
+<div style="margin: 2%; padding: 1%; text-align: center">
+  {% if author.avatar %}
+    <div class="author__avatar">
+      {% if author.avatar contains "://" %}
+        {% assign author_src = author.avatar %}
+      {% else %}
+        {% assign author_src = author.avatar | relative_url %}
+      {% endif %}
+
+      {% if author.home %}
+        {% if author.home contains "://" %}
+          {% assign author_link = author.home %}
+        {% else %}
+          {% assign author_link = author.home | relative_url %}
+        {% endif %}
+        <a href="{{ author_link }}">
+          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        </a>
+      {% else %}
+        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="author__content">
+    {% if author.home %}
+      <a href="{{ author_link }}"><h4 class="author__name" itemprop="name">{{ author.name }}</h4></a>
+    {% else %}
+      <h4 class="author__name" itemprop="name">{{ author.name }}</h4>
+    {% endif %}
+  </div>
+</div>
+</div>

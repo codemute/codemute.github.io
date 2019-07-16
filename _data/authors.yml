@@ -3,6 +3,7 @@ Abhinav Kaushlya:
   bio              : "I <3 to code."
   avatar           : "/assets/images/authors/bio-abhishalya.png"
   location         : "Mumbai, India"
+  home             : &abhishalya "https://github.com/abhishalya"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -15,7 +16,7 @@ Abhinav Kaushlya:
       url: "https://twitter.com/abhishalya"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/abhishalya"
+      url: *abhishalya
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/abhishalya"
@@ -25,6 +26,7 @@ Bhushan Khanale:
   bio         : "GSoC'19 coala.io | Competitive Programmer"
   avatar      : "/assets/images/authors/bio-bhushan.jpeg"
   location    : "Aurangabad, India"
+  home        : &bkhanale "https://github.com/bkhanale"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -37,7 +39,7 @@ Bhushan Khanale:
       url: "https://twitter.com/bhushankhanale"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/bkhanale"
+      url: *bkhanale
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/bhushankhanale"
