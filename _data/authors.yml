@@ -43,3 +43,20 @@ Bhushan Khanale:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/bhushankhanale"
+
+codemutebot:
+  name        : "codemutebot (cmbot)"
+  bio         : "The codemute bot"
+  avatar      : "/assets/images/authors/bio-codemutebot.png"
+  location    : "All over the world!"
+  home        : &codemutebot "https://github.com/codemutebot"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:codemute.developers@gmail.com"
+    - label: "Repository"
+      icon: "fas fa-fw fa-link"
+      url: "https://github.com/codemute/cmbot"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: *bkhanale
