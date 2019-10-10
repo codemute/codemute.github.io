@@ -60,3 +60,26 @@ codemutebot:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: *bkhanale
+
+Sibasish Ghosh:
+  name             : "Sibasish Ghosh"
+  bio              : "Someone who is aiming to convert his idols into rivals."
+  avatar           : "/assets/images/authors/bio-sibasish.jpeg"
+  location         : "Bhubaneswar, India"
+  home             : &sibasish14 "https://github.com/sibasish14"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:sibasish.ghosh14@gmail.com"
+    - label: "Blog"
+      icon: "fas fa-fw fa-link"
+      url: "#"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/sibasish_14"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: *sibasish14
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/sibasish_14"
